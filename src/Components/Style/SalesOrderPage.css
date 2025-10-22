@@ -1,0 +1,40 @@
+/* เจาะจงสไตล์ไปที่ title ที่อยู่ใน custom-timeline ของเรา */
+.custom-timeline .timeline-horz-item .title {
+  /* - transform: translateY(-25px) คือการสั่งให้ขยับในแนวตั้ง (แกน Y) ขึ้นไป 25px
+    - คุณสามารถปรับตัวเลข -25px ได้ตามความพอใจ (เช่น -30px หรือ -20px)
+  */
+  transform: translateY(-10px);
+}
+
+.custom-timeline {
+  width: 100%;
+  min-height: 400px; /* กำหนดความสูงขั้นต่ำ */
+}
+
+.custom-timeline .timeline-item-title {
+  font-size: 0.7rem;
+}
+
+div[class*="Wrapper-sc-"] {
+  /* padding-top คือระยะห่างจากเส้นแกนกลางไปยังกล่องเนื้อหา
+    ยิ่งค่านี้น้อยลง เส้นแนวตั้งที่เชื่อมอยู่ก็จะสั้นลง
+    คุณสามารถปรับค่า 1rem (16px) นี้ได้ตามต้องการ
+  */
+  /* padding-left: 1rem !important; */
+  padding: auto;
+}
+
+.custom-timeline .timeline-card-content {
+  /* ยิ่งค่า max-width นี้น้อยลงเท่าไหร่ 
+    เส้นที่เชื่อมจากแกนกลางก็จะสั้นลงเท่านั้น
+  */
+  max-width: 300px; 
+}
+
+.timeline-horz-card-wrapper {
+  /* padding-top คือระยะห่างจากเส้นแกนกลางไปยังกล่องเนื้อหา
+    ยิ่งค่านี้น้อยลง เส้นแนวตั้งที่เชื่อมอยู่ก็จะสั้นลง
+    คุณสามารถปรับค่า 1rem (16px) นี้ได้ตามต้องการ
+  */
+  padding-top: 1rem !important;
+}
